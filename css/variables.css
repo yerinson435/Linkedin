@@ -1,0 +1,10 @@
+
+:root{
+  --background-body: #f4f2ee;
+  --color-boby: #5f5f5f;
+  --color-header: #fff;
+  --sombra-header: rgba(0, 0, 0, 0.1);
+  --search-color: #edf3f8;
+  --color-texto: #5f5f5f;
+  --navigation-link-hover: #222;
+}
