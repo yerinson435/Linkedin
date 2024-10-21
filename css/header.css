@@ -1,3 +1,6 @@
+@import url(style.css);
+@import url(variables.css);
+
 .container{
   width: 100%;
   margin: auto;
@@ -6,7 +9,7 @@
 
 header{
   grid-area: header;
-  width: 100%;
+  width: 100%  ;
   background-color: var(--color-header);
   padding: 0 100px;
   top: 0;
@@ -113,5 +116,114 @@ header derecho
 }
 
 .navigation__link::after{
-  
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: var(--navigation-link-hover);
+  position: absolute;
+  bottom: 0px;
+  transition: width 0.3s;
+}
+
+.navigation__link:hover::after,
+.navigation__link.active-link::after{
+  width: 100%;
+}
+
+.online{
+  position: relative;
+}
+
+.online::after{
+  content: '';
+  height: 7px;
+  width: 7px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  left: 20px;
+  top: 0px;
+  background-color: var(--online);
+  position: absolute;
+}
+
+.profile{
+  position: relative;
+}
+
+.navigation__profile{
+  width: 30px;
+  border-radius: 50%;
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+
+/*menu despegable*/
+
+.profiel-menu-warp{
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 320px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.profiel-menu-warp.open-manu{
+  max-height: 400px;
+}
+
+.profile-menu{
+  background-color: var(--navigation-link-hover);
+  color: var(--color-header);
+  padding: 20px;
+  margin: 10px;
+}
+
+.user-info{
+  display: flex;
+  align-items: center;
+}
+
+.user-info img{
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;  
+}
+
+.user-info h3{
+  font-size: 500;
+  margin-bottom: -7px;
+}
+
+.user-info a{
+  color: var(--color-link-menu-despegable );
+  font-size: 13px;
+}
+
+.profile-menu hr{
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-header);
+  margin: 15px 0 10px;
+}
+
+.profile-menu-link{
+  display: flex;
+  align-items: center;
+  color: var(--color-header);
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.profile-menu-link p{
+  width: 100%;
+}
+
+.profile-menu-link img{
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 15px; 
 }
