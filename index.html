@@ -10,83 +10,195 @@
 </head>
 
 <body>
-  <header class="header__container container">
-    <div class="header__izquierdo">
-      <a href="index.html" class="logo">
-        <img src="/img/logo_linkedin.webp" alt="logo" class="logo__img">
-      </a>
-      <form class="search">
-        <i class="search__icon ri-search-line"></i>
-        <input class="search__input" type="text" placeholder="Buscar">
-      </form>
-    </div>
+  <header class="header">
+    <div class="header__container">
+      <div class="header__izquierdo">
+        <a href="index.html" class="logo">
+          <img src="/img/logo_linkedin.webp" alt="logo" class="logo__img">
+        </a>
+        <form class="search">
+          <i class="search__icon ri-search-line"></i>
+          <input class="search__input" type="text" placeholder="Buscar">
+        </form>
+      </div>
 
-    <div class="header__derecho"></div>
-    <nav class="navigation">
-      <ul class="navigation__list">
+      <div class="header__derecho"></div>
+        <nav class="navigation">
+          <ul class="navigation__list">
 
-        <li class="navigation__item">
-          <a href="" class="navigation__link active-link">
-              <i class="ri-home-4-fill">
-              </i>
-            <span class="navigation__span">Inicio</span>
-          </a>
-        </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link active-link">
+                <i class="ri-home-4-fill">
+                </i>
+                <span class="navigation__span">Inicio</span>
+              </a>
+            </li>
 
-        <li class="navigation__item">
-          <a href="" class="navigation__link">
-            <i class="ri-group-fill"></i>   
-            <span class="navigation__span">Mi Red</span>
-          </a>
-        </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">
+                <i class="ri-group-fill"></i>   
+                <span class="navigation__span">Mi Red</span>
+              </a>
+            </li>
 
-        <li class="navigation__item">
-          <a href="" class="navigation__link">
-            <i class="ri-briefcase-4-fill"></i>
-            <span class="navigation__span">Empleos</span>
-          </a>
-        </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">
+                <i class="ri-briefcase-4-fill"></i>
+                <span class="navigation__span">Empleos</span>
+              </a>
+            </li>
 
-        <li class="navigation__item">
-          <a href="" class="navigation__link">
-            <i class="ri-chat-4-fill"></i>
-            <span class="navigation__span">Mensajes</span>
-          </a>
-        </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">
+                <i class="ri-chat-4-fill"></i>
+                <span class="navigation__span">Mensajes</span>
+              </a>
+            </li>
 
-        <li class="navigation__item">
-          <a href="" class="navigation__link">
-            <i class="ri-notification-3-fill"></i>
-            <span class="navigation__span">Notificaciones</span>
-          </a>
-        </li>
-      </ul>
-
-            <div class="profile" id="profileMenu">
-        <div class="online">
-          <img src="/img/perfil.png" alt="user" class="navigation__profile">
-        </div>
+            <li class="navigation__item">
+              <a href="" class="navigation__link">
+                <i class="ri-notification-3-fill"></i>
+                <span class="navigation__span">Notificaciones</span>
+              </a>
+            </li>
+          </ul>
+          <div class="profile" id="profileMenu">
+            <div class="online">
+              <img src="/img/perfil.png" alt="user" class="navigation__profile">
+            </div>
+          
 
 <!-- menu despegable -->
-        
-        <div class="profiel-menu-warp" id="profielMenu">
-          <div class="profile-menu">
-            <div class="user-info">
-              <img src="/img/perfil.png">
-              <div>
-                <h3>MClovin</h3>
-                <a href="profile.html">Seeyour profile</a>
+
+            <!-- <div class="profile-menu-wrap open-menu" id="profielMenu">
+              <div class="profile-menu">
+                <div class="user-info">
+                  <img src="/img/perfil.png">
+                  <div>
+                    <h3>MClovin</h3>
+                    <a href="profile.html">Seeyour profile</a>
+                  </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                  <img src="/img/feedback.png">
+                  <p>Give Feebdack</p>
+                  <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                  <img src="/img/setting.png">
+                  <p>Setting & Privacy</p>
+                  <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                  <img src="/img/help.png">
+                  <p>Help & Support</p>
+                  <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                  <img src="/img/display.png">
+                  <p>Display & Accessiblity</p>
+                  <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                  <img src="/img/logout.png">
+                  <p>Logout</p>
+                  <span>></span>
+                </a>
               </div>
-            </div>
+            </div> -->
+
           </div>
-        </div>
-
-
-
-
-    </nav>
-    
+        </nav>
+      </div>
+    </div>
   </header>
+
+  <!-- Layout -->
+
+  <div class="content-layout container">
+
+    <!-- left Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-profile-box">
+        <img src="/img/cover-pic.png" width="100%">
+        <div class="sidebar-profile-info">
+          <img src="/img/perfil.png">
+          <h1>MClovin</h1>
+          <h3>Web Developer</h3>
+          <ul>
+            <li>Your Profile views <span>52</span></li>
+            <li>Your post views <span>810</span></li>
+            <li>Your connections views <span>205</span></li>
+          </ul>
+        </div>
+        <div class="sidebar-profile-link">
+          <a href="#"><img src="/img/items.png">My Items</a>
+          <a href="#"><img src="/img/premium.png">Try Premium</a>
+        </div>
+      </div>
+
+      <div class="sidebar-activity">
+        <h3>RECENT</h3>
+        <a href="#"><i class="ri-time-line"></i> Web Developer </a>
+        <a href="#"><i class="ri-time-line"></i> User Interface </a>
+        <a href="#"><i class="ri-time-line"></i> Online Learning </a>
+        <a href="#"><i class="ri-time-line"></i> Learn Online </a>
+        <a href="#"><i class="ri-time-line"></i> Code Better </a>
+        <a href="#"><i class="ri-time-line"></i> Group Learning </a>
+        <h3>GROUPS</h3>
+        <a href="#"><i class="ri-group-3-fill"></i> Web Desing Groups </a>
+        <a href="#"><i class="ri-group-3-fill"></i> HTML & CSS Learners </a>
+        <a href="#"><i class="ri-group-3-fill"></i> Python & JavaScript Group </a>
+        <a href="#"><i class="ri-group-3-fill"></i> Learn Coding Online </a>
+        <h3>HASHTAG</h3>
+        <a href="#"><i class="ri-hashtag"></i> webdevelopment </a>
+        <a href="#"><i class="ri-hashtag"></i> userinterface </a>
+        <a href="#"><i class="ri-hashtag"></i> onlinelearning </a>
+        <div class="discover-more-link">
+          <a href="#">Discover more</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main contenido -->
+    <main class="main">
+
+      <div class="create-post">
+        <div class="create-post-input">
+          <img src="/img/perfil.png">
+          <textarea rows="2" placeholder="Write a post"></textarea>
+        </div>
+        <div class="create-post-links">
+          <li>
+            <a href="#">
+              <i class="ri-camera-fill"></i>
+            <span>Photo</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="ri-video-on-fill"></i>
+              <span>Video</span>
+              </a>
+            </li>
+          <li>
+            <a href="#">
+              <i class="ri-calendar-event-fill"></i>
+              <span>Event</span>
+            </a>
+            </li>
+          <li>
+            <a href="#">Post</a>
+          </li>
+        </div>
+      </div>
+
+    </main>
+
+
+  </div>
+
 
 
 </body>

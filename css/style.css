@@ -2,6 +2,8 @@
 
 @import url(variables.css);
 @import url(header.css);
+@import url(sidebar-left.css);
+@import url(main.css);
 
 *{
   margin: 0;

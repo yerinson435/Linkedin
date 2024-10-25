@@ -1,0 +1,171 @@
+@import url(variables.css);
+@import url(style.css);
+
+.main{
+    grid-area: main;
+}
+
+.create-post{
+    background-color: var(--color-header);
+}
+
+.create-post-input{
+    padding: 20px 25px 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.create-post-input img{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.create-post-input textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: transparent;
+    margin-top: 8px;
+    resize: vertical;
+    overflow: auto;
+}
+
+::placeholder{
+    font-weight: 500;
+}
+
+.create-post-link{
+    display: flex;
+    align-items: flex-start;
+}
+
+.create-post-link li{
+    list-style: none;
+    border-top: 1px solid var(--border-sidebar-left);
+    border-right: 1px solid var(--border-sidebar-left);
+    font-size: 13px;
+    display: flex;
+    flex-basis: 25%;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-post-link li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    transition: 0.5s;
+    color: var(--color-create-post);
+}
+
+.create-post li a span{
+    color: var(--create-post-li);
+}
+
+.create-post-link li a:hover{
+    background-color: var( --border-sidebar-left);
+}
+
+.create-post-links li:last-child{
+    border-right: 0;
+    background-color: var(--color-span-sidebar-left);
+    color: var(--color-header);
+}
+  
+.create-post-links li i{
+    font-size: 1.4rem;
+    color: var(--color-span-sidebar-left);
+    margin-right: 5px;
+}
+
+.short-by {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.short-by hr {
+  flex: 1;
+  border: 0;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.short-by p {
+  font-size: 13px;
+  padding-left: 5px;
+}
+
+.short-by p span {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.short-by p span img {
+  width: 12px;
+  margin-left: 3px;
+}
+
+.post {
+  background-color: #fff;
+  padding: 20px 25px 5px;
+  margin: 5px 0 15px;
+}
+
+.posts-author{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.posts-author img{
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.posts-author h1{
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.posts-author small{
+  display: block;
+  margin-top: -2px;
+}
+
+.post p{
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.post-stats{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+}
+
+.post-stats div{
+  display: flex;
+  align-items: center;
+}
+
+.post-stats-info{
+  display: flex;
+  gap: 10px;
+}
+
+.post-stats img{
+  width: 15px;
+  margin-right: -5px;
+}
+  

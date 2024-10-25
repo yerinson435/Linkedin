@@ -9,4 +9,13 @@
   --navigation-link-hover: #222;
   --online: #41db51;
   --color-link-menu-despegable: #c9dbf8;
+  --color-sidebar: #ffff;
+  --color-letra-sidebar-left: #777;
+  --color-span-sidebar-left: #2874b1;
+  --border-sidebar-left: #ccc;
+  --color-sidebar-activity: #888;
+  --sidebar-activity-hover: #edf3f8;
+  --color-create-post: #ffff;
+  --create-post-li: #2222;
+
 }
